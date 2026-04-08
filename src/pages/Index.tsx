@@ -160,7 +160,7 @@ export default function Index() {
             <p className="vibe-text">
               Стефания — это не просто ресторан. Это ощущение тепла, музыки и хорошей компании. Виниловые пластинки, мягкий свет и диваны из 70-х создают атмосферу, в которой хочется остаться навсегда. Бронь не нужна — просто приходи.
             </p>
-            <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }} onClick={() => setStoryOpen(true)}>
+            <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }} onClick={() => setAboutOpen(true)}>
               Наша история
             </button>
           </div>
