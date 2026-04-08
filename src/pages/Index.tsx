@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 export default function Index() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
       <div className="grain-overlay" />
@@ -6,7 +10,7 @@ export default function Index() {
       <header className="header">
         <div className="logo">STEFANIA*</div>
         <nav>
-          <a href="#">Меню</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); setMenuOpen(true); }}>Пора выбирать: откройте меню!</a>
           <a href="#">О нас</a>
           <a href="#">Афиша</a>
           <a href="#">Контакты</a>
@@ -193,6 +197,47 @@ export default function Index() {
           </div>
         </section>
       </main>
+
+      {menuOpen && (
+        <div
+          onClick={() => setMenuOpen(false)}
+          style={{
+            position: "fixed", inset: 0, zIndex: 9999,
+            background: "rgba(0,0,0,0.85)",
+            display: "flex", alignItems: "center", justifyContent: "center",
+            padding: "20px",
+          }}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              position: "relative",
+              maxWidth: "900px",
+              width: "100%",
+              border: "var(--border)",
+              boxShadow: "var(--shadow)",
+            }}
+          >
+            <button
+              onClick={() => setMenuOpen(false)}
+              style={{
+                position: "absolute", top: "-16px", right: "-16px",
+                width: "40px", height: "40px",
+                background: "var(--primary)", color: "white",
+                border: "var(--border)", fontWeight: 800, fontSize: "18px",
+                cursor: "pointer", zIndex: 10,
+              }}
+            >
+              ✕
+            </button>
+            <img
+              src="https://cdn.poehali.dev/projects/ac70d293-8085-49bd-999e-b1831c4bf4ba/bucket/3a9a0dd8-625f-4df6-9750-6cc53e88f66e.jpeg"
+              alt="Меню Стефания"
+              style={{ width: "100%", display: "block" }}
+            />
+          </div>
+        </div>
+      )}
 
       <footer>
         <div>
