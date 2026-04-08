@@ -30,7 +30,7 @@ export default function Index() {
               Стефания — место, где ностальгия встречается с дерзким вкусом. Ретро-атмосфера, живая кухня и компания, которая делает вечер незабываемым.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
-              <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
+              <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }} onClick={() => setMenuOpen(true)}>
                 Смотреть меню
               </button>
               <button className="btn-cta" style={{ background: "white" }}>
