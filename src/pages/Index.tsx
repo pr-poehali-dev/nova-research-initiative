@@ -129,7 +129,7 @@ export default function Index() {
                 Популярное
               </span>
               <img
-                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                src="https://cdn.poehali.dev/projects/ac70d293-8085-49bd-999e-b1831c4bf4ba/bucket/baf1eb1f-ad40-458d-a8c0-aa0a3005b22d.jpg"
                 alt="Коктейль Стефа"
               />
               <div className="menu-card-body">
