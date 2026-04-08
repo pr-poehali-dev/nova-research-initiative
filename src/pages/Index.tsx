@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [storyOpen, setStoryOpen] = useState(false);
 
   return (
     <>
@@ -33,7 +34,7 @@ export default function Index() {
               <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }} onClick={() => setMenuOpen(true)}>
                 Смотреть меню
               </button>
-              <button className="btn-cta" style={{ background: "white" }}>
+              <button className="btn-cta" style={{ background: "white" }} onClick={() => setStoryOpen(true)}>
                 Наша история
               </button>
             </div>
