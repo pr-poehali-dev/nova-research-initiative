@@ -164,7 +164,11 @@ export default function Index() {
               Наша история
             </button>
           </div>
-          <div className="vibe-img"></div>
+          <div className="vibe-img" style={{
+            backgroundImage: `url('https://cdn.poehali.dev/projects/ac70d293-8085-49bd-999e-b1831c4bf4ba/files/889b6431-2b8d-4ed4-ace6-e5e0ec5794a2.jpg')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}></div>
         </section>
 
         <section className="section-padding">
