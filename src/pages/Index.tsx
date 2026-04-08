@@ -77,7 +77,7 @@ export default function Index() {
             <div className="menu-card">
               <span className="menu-tag">Хит продаж</span>
               <img
-                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                src="https://cdn.poehali.dev/projects/ac70d293-8085-49bd-999e-b1831c4bf4ba/bucket/d4a28434-f230-45f5-9938-6cc9e284c5ba.jpeg"
                 alt="Стефания-бургер"
               />
               <div className="menu-card-body">
