@@ -3,6 +3,7 @@ import { useState } from "react";
 export default function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [storyOpen, setStoryOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   return (
     <>
@@ -12,7 +13,7 @@ export default function Index() {
         <div className="logo">STEFANIA*</div>
         <nav>
           <a href="#" onClick={(e) => { e.preventDefault(); setMenuOpen(true); }}>Пора выбирать: откройте меню!</a>
-          <a href="#">О нас</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); setAboutOpen(true); }}>О нас</a>
           <a href="#">Афиша</a>
           <a href="#">Контакты</a>
         </nav>
@@ -198,6 +199,66 @@ export default function Index() {
           </div>
         </section>
       </main>
+
+      {aboutOpen && (
+        <div
+          onClick={() => setAboutOpen(false)}
+          style={{
+            position: "fixed", inset: 0, zIndex: 9999,
+            backgroundImage: `url('https://cdn.poehali.dev/projects/ac70d293-8085-49bd-999e-b1831c4bf4ba/files/889b6431-2b8d-4ed4-ace6-e5e0ec5794a2.jpg')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            display: "flex", alignItems: "center", justifyContent: "center",
+            padding: "20px",
+          }}
+        >
+          <div style={{ position: "absolute", inset: 0, background: "rgba(15,10,5,0.72)" }} />
+          <div
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              position: "relative",
+              maxWidth: "740px",
+              width: "100%",
+              background: "rgba(245,238,220,0.97)",
+              border: "var(--border)",
+              boxShadow: "var(--shadow)",
+              maxHeight: "85vh",
+              overflowY: "auto",
+              padding: "48px",
+            }}
+          >
+            <button
+              onClick={() => setAboutOpen(false)}
+              style={{
+                position: "absolute", top: "-16px", right: "-16px",
+                width: "40px", height: "40px",
+                background: "var(--primary)", color: "white",
+                border: "var(--border)", fontWeight: 800, fontSize: "18px",
+                cursor: "pointer", zIndex: 10,
+              }}
+            >
+              ✕
+            </button>
+            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "2rem", marginBottom: "24px", textTransform: "uppercase" }}>
+              О нас
+            </h2>
+            <p style={{ lineHeight: 1.8, marginBottom: "24px", color: "#111" }}>
+              Ретро‑ресторан «Стефания» — это не просто заведение общепита, а настоящий портал в начало XX века. Расположенный в старинном особняке в центре Москвы, он воссоздаёт атмосферу дореволюционной России с удивительной точностью и любовью к деталям. Пространство ресторана погружает гостей в атмосферу начала XX века:
+            </p>
+            <ul style={{ paddingLeft: "20px", lineHeight: 2.1, color: "#111", marginBottom: "24px" }}>
+              <li>Стены оклеены обоями с тиснением в стиле ар‑нуво.</li>
+              <li>Мебель — подлинная антикварная: резные дубовые стулья, массивные буфеты, зеркала в потемневших рамах.</li>
+              <li>Освещение — лампы с тёплым жёлтым светом и тканевыми абажурами, создающими мягкий, приглушённый свет.</li>
+              <li>Декор — старинные часы, граммофон (который действительно работает), канделябры, черно‑белые фотографии в рамках, карты того времени на стенах.</li>
+              <li>Паркет с узором «ёлочка», отполированный до мягкого блеска.</li>
+              <li>Камин в главном зале — зимой в нём горит настоящий огонь.</li>
+            </ul>
+            <p style={{ lineHeight: 1.8, color: "#111", fontStyle: "italic" }}>
+              В углу зала стоит граммофон, играющий вальсы и романсы начала века. Официанты одеты в стиле эпохи: мужчины — во фраки и жилеты, женщины — в платья с фартуками.
+            </p>
+          </div>
+        </div>
+      )}
 
       {storyOpen && (
         <div
