@@ -24,7 +24,7 @@ export default function Index() {
             <h1 className="hero-title">
               ЕДА,
               <br />
-              КАК У <span>МАМЫ</span>
+              КАК ОТ <span>БОГА</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#555]">
               Стефания — место, где ностальгия встречается с дерзким вкусом. Ретро-атмосфера, живая кухня и компания, которая делает вечер незабываемым.
