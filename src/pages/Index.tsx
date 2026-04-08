@@ -194,13 +194,19 @@ export default function Index() {
                 alt="Инста 3"
               />
             </div>
-            <div className="social-item">
-              <a href="https://preview--nova-research-initiative.poehali.dev/#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                  alt="Инста 4"
-                  style={{ display: "block", width: "100%" }}
-                />
+            <div className="social-item" style={{ display: "flex", flexDirection: "column" }}>
+              <img
+                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Инста 4"
+                style={{ display: "block", width: "100%" }}
+              />
+              <a
+                href="https://preview--nova-research-initiative.poehali.dev/#"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ padding: "8px 12px", fontSize: "12px", color: "var(--primary)", fontWeight: 700, wordBreak: "break-all" }}
+              >
+                preview--nova-research-initiative.poehali.dev
               </a>
             </div>
           </div>
