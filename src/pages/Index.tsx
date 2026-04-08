@@ -265,11 +265,14 @@ export default function Index() {
           onClick={() => setStoryOpen(false)}
           style={{
             position: "fixed", inset: 0, zIndex: 9999,
-            background: "rgba(0,0,0,0.85)",
+            backgroundImage: `url('https://cdn.poehali.dev/projects/ac70d293-8085-49bd-999e-b1831c4bf4ba/files/a4541878-a377-4cee-a8a9-bc670baa455a.jpg')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
             display: "flex", alignItems: "center", justifyContent: "center",
             padding: "20px",
           }}
         >
+          <div style={{ position: "absolute", inset: 0, background: "rgba(15,10,5,0.65)" }} />
           <div
             onClick={(e) => e.stopPropagation()}
             style={{
