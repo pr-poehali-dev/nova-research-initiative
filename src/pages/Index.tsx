@@ -4,12 +4,12 @@ export default function Index() {
       <div className="grain-overlay" />
 
       <header className="header">
-        <div className="logo">VINYL*DINER</div>
+        <div className="logo">STEFANIA*</div>
         <nav>
           <a href="#">Меню</a>
           <a href="#">О нас</a>
           <a href="#">Афиша</a>
-          <a href="#">Адреса</a>
+          <a href="#">Контакты</a>
         </nav>
         <button className="btn-cta">Забронировать</button>
       </header>
@@ -18,47 +18,47 @@ export default function Index() {
         <section className="hero">
           <div className="hero-content">
             <h1 className="hero-title">
-              БЕЗ ПОНТОВ,
+              ЕДА,
               <br />
-              ТОЛЬКО <span>ВКУС</span>
+              КАК У <span>МАМЫ</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#555]">
-              Эстетика 70-х в современной подаче. Локальные продукты, огненные блюда и атмосфера для настоящих ценителей.
+              Стефания — место, где ностальгия встречается с дерзким вкусом. Ретро-атмосфера, живая кухня и компания, которая делает вечер незабываемым.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
               <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
-                Заказать
+                Смотреть меню
               </button>
               <button className="btn-cta" style={{ background: "white" }}>
-                Смотреть меню
+                Наша история
               </button>
             </div>
           </div>
           <div className="hero-img">
             <div className="sticker">
-              СВЕЖАК
+              ОТКРЫТО
               <br />
-              КАЖДЫЙ ДЕНЬ
+              ДО 02:00
             </div>
             <div className="floating-tag hidden md:block" style={{ top: "20%", left: "10%" }}>
-              #ЭСТЕТИКА
+              #СТЕФАНИЯ
             </div>
             <div className="floating-tag hidden md:block" style={{ bottom: "30%", right: "20%" }}>
-              ОГОНЬ
+              ВКУСНО
             </div>
           </div>
         </section>
 
         <div className="marquee">
           <div className="marquee-content">
-            &nbsp; * БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ *
-            БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ
+            &nbsp; * СТЕФАНИЯ — ЭТО ВАЙБ * БУРГЕРЫ КОТОРЫЕ СНЯТСЯ * ЖИВАЯ МУЗЫКА * ОТКРЫТЫ ДО 2:00 * ЛУЧШЕЕ МЕСТО В ГОРОДЕ *
+            СТЕФАНИЯ — ЭТО ВАЙБ * БУРГЕРЫ КОТОРЫЕ СНЯТСЯ * ЖИВАЯ МУЗЫКА * ОТКРЫТЫ ДО 2:00 * ЛУЧШЕЕ МЕСТО В ГОРОДЕ
           </div>
         </div>
 
         <section className="section-padding">
           <div className="section-header">
-            <h2 className="section-title">ВЫБОР ШЕФА</h2>
+            <h2 className="section-title">ХИТ СЕЗОНА</h2>
             <a
               href="#"
               className="text-sm md:text-base"
@@ -74,7 +74,7 @@ export default function Index() {
               <span className="menu-tag">Хит продаж</span>
               <img
                 src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Классический бургер"
+                alt="Стефания-бургер"
               />
               <div className="menu-card-body">
                 <div
@@ -85,11 +85,11 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Классика</h3>
+                  <h3>Стефания-бургер</h3>
                   <span className="price">1 400 ₽</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Тройной смэш из мраморной говядины, фирменный соус, маринованные огурцы на бриоши.
+                  Двойная котлета из мраморной говядины, фирменный соус «Стефа», маринованный лук на бриоши.
                 </p>
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function Index() {
               </span>
               <img
                 src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Неоновая пицца"
+                alt="Ретро Пепперони"
               />
               <div className="menu-card-body">
                 <div
@@ -112,10 +112,10 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Электро Пепперони</h3>
-                  <span className="price">1 800 ₽</span>
+                  <h3>Ретро Пепперони</h3>
+                  <span className="price">1 700 ₽</span>
                 </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>Двойная пепперони, острый мёд, тесто на закваске.</p>
+                <p style={{ fontSize: "14px", color: "#666" }}>Двойная пепперони, острый мёд, тесто на закваске — как в 70-х, только лучше.</p>
               </div>
             </div>
 
@@ -125,8 +125,8 @@ export default function Index() {
                 Популярное
               </span>
               <img
-                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Диско Сауэр"
+                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Коктейль Стефа"
               />
               <div className="menu-card-body">
                 <div
@@ -137,11 +137,11 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Диско Сауэр</h3>
-                  <span className="price">1 200 ₽</span>
+                  <h3>Коктейль «Стефа»</h3>
+                  <span className="price">1 100 ₽</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Джин, цветок бузины, голубой чай и съедобная золотая пыльца.
+                  Джин, цветок бузины, голубой чай и съедобная золотая пыльца. Один раз — и навсегда.
                 </p>
               </div>
             </div>
@@ -150,10 +150,9 @@ export default function Index() {
 
         <section className="retro-vibe">
           <div>
-            <h2 className="vibe-title">ВАЙБ-ЧЕК ПРОЙДЕН.</h2>
+            <h2 className="vibe-title">МЕСТО С ДУШОЙ.</h2>
             <p className="vibe-text">
-              Мы не просто кормим. Мы создаём моменты. От плейлиста хип-хопа 90-х до диванов в стиле 70-х — каждый уголок
-              продуман для твоего идеального кадра. Бронь не нужна, просто приходи с настроением.
+              Стефания — это не просто ресторан. Это ощущение тепла, музыки и хорошей компании. Виниловые пластинки, мягкий свет и диваны из 70-х создают атмосферу, в которой хочется остаться навсегда. Бронь не нужна — просто приходи.
             </p>
             <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }}>
               Наша история
@@ -164,7 +163,7 @@ export default function Index() {
 
         <section className="section-padding">
           <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
-            @VINYL.DINER
+            @STEFANIA.DINER
           </h2>
           <div className="social-grid">
             <div className="social-item">
@@ -197,9 +196,9 @@ export default function Index() {
 
       <footer>
         <div>
-          <div className="footer-logo">VINYL*DINER</div>
+          <div className="footer-logo">STEFANIA*</div>
           <p style={{ color: "#666", lineHeight: 1.6 }}>
-            Твоё место для еды высокого качества и лоу-фай атмосферы. С 2024, но ощущается как 1974.
+            Твоё место для вкусной еды и ретро-атмосферы. С любовью, с 2024 года — но ощущается как 1974.
           </p>
         </div>
         <div className="footer-links">
@@ -217,12 +216,12 @@ export default function Index() {
             </li>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Политика
+                Контакты
               </a>
             </li>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Условия
+                Политика
               </a>
             </li>
           </ul>
@@ -230,16 +229,27 @@ export default function Index() {
         <div className="footer-links">
           <h4>Часы работы</h4>
           <ul>
-            <li>Вт-Чт: 12:00 - 23:00</li>
-            <li>Пт-Сб: 12:00 - 02:00</li>
-            <li>Вс: 11:00 - 21:00</li>
-            <li>Пн: Выходной</li>
+            <li>Пн–Чт: 12:00 – 00:00</li>
+            <li>Пт–Сб: 12:00 – 02:00</li>
+            <li>Вс: 12:00 – 23:00</li>
           </ul>
         </div>
-        <div className="footer-bottom">
-          <span>2025 VINYL DINER</span>
-          <span>ВКУС КЛАССИКИ</span>
-          <span>IG / TW / TK</span>
+        <div className="footer-links">
+          <h4>Контакты</h4>
+          <ul>
+            <li>+7 (000) 000-00-00</li>
+            <li>hello@stefania.ru</li>
+            <li>
+              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
+                Telegram
+              </a>
+            </li>
+          </ul>
         </div>
       </footer>
     </>
