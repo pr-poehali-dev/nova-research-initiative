@@ -104,7 +104,7 @@ export default function Index() {
                 Острое
               </span>
               <img
-                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                src="https://cdn.poehali.dev/projects/ac70d293-8085-49bd-999e-b1831c4bf4ba/bucket/fd0bb69a-c71d-4be3-bce7-5b850eb0090b.jpg"
                 alt="Ретро Пепперони"
               />
               <div className="menu-card-body">
