@@ -159,7 +159,7 @@ export default function Index() {
             <p className="vibe-text">
               Стефания — это не просто ресторан. Это ощущение тепла, музыки и хорошей компании. Виниловые пластинки, мягкий свет и диваны из 70-х создают атмосферу, в которой хочется остаться навсегда. Бронь не нужна — просто приходи.
             </p>
-            <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }}>
+            <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }} onClick={() => setStoryOpen(true)}>
               Наша история
             </button>
           </div>
@@ -198,6 +198,71 @@ export default function Index() {
           </div>
         </section>
       </main>
+
+      {storyOpen && (
+        <div
+          onClick={() => setStoryOpen(false)}
+          style={{
+            position: "fixed", inset: 0, zIndex: 9999,
+            background: "rgba(0,0,0,0.85)",
+            display: "flex", alignItems: "center", justifyContent: "center",
+            padding: "20px",
+          }}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              position: "relative",
+              maxWidth: "720px",
+              width: "100%",
+              background: "var(--cream)",
+              border: "var(--border)",
+              boxShadow: "var(--shadow)",
+              maxHeight: "85vh",
+              overflowY: "auto",
+              padding: "48px",
+            }}
+          >
+            <button
+              onClick={() => setStoryOpen(false)}
+              style={{
+                position: "absolute", top: "-16px", right: "-16px",
+                width: "40px", height: "40px",
+                background: "var(--primary)", color: "white",
+                border: "var(--border)", fontWeight: 800, fontSize: "18px",
+                cursor: "pointer", zIndex: 10,
+              }}
+            >
+              ✕
+            </button>
+            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "2rem", marginBottom: "24px", textTransform: "uppercase" }}>
+              Наша история
+            </h2>
+            <p style={{ lineHeight: 1.8, marginBottom: "20px", color: "#444" }}>
+              Всё началось с находки — старинного альбома с фотографиями и рецептами, который Александр Воронов обнаружил на чердаке дома своей бабушки в маленьком городке под Петербургом. Альбом принадлежал его прабабушке Стефании, которая в 1910‑х годах держала небольшое кафе в центре города. Пожелтевшие страницы хранили не только рецепты, но и атмосферу эпохи: наброски интерьера, заметки о гостях, зарисовки блюд.
+            </p>
+            <p style={{ lineHeight: 1.8, marginBottom: "32px", color: "#444" }}>
+              Александр, успешный ресторатор с тремя современными заведениями в Москве, вдруг почувствовал, что устал от модных трендов. Ему захотелось создать что‑то настоящее, тёплое, с историей. Идея ретро‑ресторана, посвящённого памяти прабабушки, родилась мгновенно. Он назвал его «Стефания» — в честь женщины, чей дух вдохновил этот проект.
+            </p>
+            <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.3rem", marginBottom: "16px", textTransform: "uppercase" }}>
+              Меню
+            </h3>
+            <p style={{ lineHeight: 1.8, marginBottom: "16px", color: "#444" }}>
+              Меню «Стефании» стало гастрономическим путешествием в прошлое с современными акцентами. Шеф‑повар, изучив бабушкины рецепты, адаптировал их для современного гостя.
+            </p>
+            <ul style={{ paddingLeft: "20px", lineHeight: 2, color: "#444", marginBottom: "16px" }}>
+              <li><strong>Фирменное блюдо</strong> — «Утка по‑стефаниевски»: рецепт из альбома, где птица мариновалась в мёде и травах, а подавалась с мочёными яблоками.</li>
+              <li><strong>Закуски:</strong> малосольные огурцы по старинному рецепту, форшмак, паштеты в фарфоровых чашечках.</li>
+              <li><strong>Горячие блюда:</strong> бефстроганов с картофельным пюре, расстегаи с рыбой, голубцы с гречкой.</li>
+              <li><strong>Десерты:</strong> медовик, сметанник, бланманже с вишнёвым соусом — многие по оригинальным рецептам Стефании.</li>
+              <li><strong>Напитки:</strong> сбитень, морсы из лесных ягод, домашние наливки, подборка вин конца XIX — начала XX века (реплики по сохранившимся описаниям).</li>
+            </ul>
+            <p style={{ lineHeight: 1.8, color: "#444", fontStyle: "italic" }}>
+              Каждое блюдо в меню сопровождалось короткой историей: откуда взялся рецепт, кто его любил в семье, какие события с ним связаны.
+            </p>
+          </div>
+        </div>
+      )}
 
       {menuOpen && (
         <div
